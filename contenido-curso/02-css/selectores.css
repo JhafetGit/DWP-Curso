@@ -1,0 +1,45 @@
+/* Selectores Universales */
+/* * {
+    color: blueviolet;
+} */
+
+/* Selectores Simples */
+
+/* h1 {
+    color: green;
+} */
+
+
+/* Selector de Grups */
+/* h1,h2,h3 {
+    color: aqua;
+} */
+
+/* Selector desente */
+main p  {
+    font-size: 20px;
+}
+
+main p  a{
+
+    font-size: 30;
+    color: red;
+
+}
+
+/* Selector de clases  */
+
+.enlace{
+    color: burlywood;
+}
+
+header .enlace{
+    font-size: large;
+}
+
+#especial{
+    color: darkgrey;
+}
+.especial{
+    color: black;
+}
