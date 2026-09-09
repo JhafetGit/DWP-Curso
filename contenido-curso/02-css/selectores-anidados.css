@@ -1,0 +1,53 @@
+/* Codigo sin anidadr */
+/* 
+.contenedor .articulo {
+    background: lightgrey;
+}
+
+.contenedor .articulo h2 {
+    font-size: 40px;
+}
+
+.contenedor .articulo p {
+    font-size: 20px;
+}
+
+.contenedor .articulo a {
+    color: red;
+}
+
+
+.contenedor .articulo.destacado {
+    background: lightblue;
+}
+
+.contenedor .articulo.destacado h2 {
+    font-size: 50px;
+} */
+
+/* selectores anidadps */
+
+.contenedor {
+    /* background: lightgreen; */
+
+    .articulo {
+        background: lightgray;
+
+        &.destacado {
+            background: whitesmoke;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        a {
+            color: red;
+        }
+    }
+
+}
