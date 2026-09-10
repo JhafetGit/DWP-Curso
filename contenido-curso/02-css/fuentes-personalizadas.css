@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Caacupe One';
+    src: url(fonts/CaacupeOne-Regular.ttf);
+}
+
+body{
+    font-family: "Caacupe One";
+    font-weight: 100;
+    
+}

@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline red 4px double;
+    
+}
+
+p {
+    text-align: justify;
+    text-transform: capitalize;
+    color: #021bc2;
+    line-height: 25px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-shadow: 5px 5px  5px #000;
+}
