@@ -1,0 +1,10 @@
+.color {
+    /* Nombre */
+    color: red;
+    /* valore hexadecimal */
+    color: #f3f3f3;
+    /* RGB */
+    color: rgb(48, 91, 200);
+    color: hsl(99, 37%, 34%);
+    border: 5px solid currentColor;
+}
