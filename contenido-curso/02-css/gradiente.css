@@ -1,0 +1,17 @@
+.caja {
+    width: 500px;
+    height: 500px;
+    background: black;
+    margin: 10px;
+}
+
+.gradiente-lineal {
+    background: linear-gradient(to top left, blue, black);
+}
+.gradiente-radial{
+    background: radial-gradient(lime, black);
+}
+
+.gradiente-conico{
+    background: conic-gradiant(blue green);
+}

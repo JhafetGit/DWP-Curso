@@ -1,0 +1,30 @@
+/* h1{
+    color: red;
+}
+
+header nav a {
+    color: red;
+}
+
+main a {
+    color: red;
+} */
+
+
+:root{
+    --colore-primario: blue;
+}
+
+h1{
+    color: var(--colore-primario);
+}
+
+header nav a {
+    color: var(--colore-primario);
+}
+
+main a {
+    color: var(--colore-primario);
+}
+
+
