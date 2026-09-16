@@ -1,0 +1,26 @@
+.caja {
+    font-size: 20px;
+    background: greenyellow;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+
+.inline-block {
+    display: inline-block;
+    margin: 10px;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+}
+
+.none{
+    display: none;
+}

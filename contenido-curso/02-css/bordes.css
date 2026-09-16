@@ -1,0 +1,61 @@
+body {
+    background: grey;
+}
+
+
+p {
+    padding: 40px;
+    margin: 40px;
+    background: white;
+
+    &.solid {
+        border: 10px solid red;
+    }
+
+    &.dotted {
+        border: 10px dotted red;
+    }
+
+    &.dashed {
+        border: 10px dashed red;
+    }
+
+    &.double {
+        border: 10px double red;
+    }
+
+    &.groove {
+        border: 10px groove red;
+    }
+
+    &.ridge {
+        border: 10px ridge red;
+    }
+
+    &.inset {
+        border: 10px inset red;
+    }
+
+    &.outset {
+        border: 10px outset red;
+    }
+
+    &.none {
+        border: 10px none red;
+    }
+
+    &.transparent {
+        border: 10px solid transparent ;
+    }
+
+    &.multi-border {
+        border-top: 10px solid red;
+        border-bottom: 20px dashed blue ;
+        border-left:  10px double black;
+        border-right:  10px dotted orange;
+    }
+    &.radius {
+        border: 10px solid red;
+        border-radius: 20px;
+    }
+}
