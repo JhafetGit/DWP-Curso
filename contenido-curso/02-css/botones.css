@@ -1,0 +1,113 @@
+body {
+    background: gray;
+
+}
+
+.contendor {
+    margin: auto;
+
+    padding: 20px 0px;
+}
+
+button, a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 15px 20px;
+    margin: 20px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transform: 0.1 ease-in all;
+}
+
+button:focus ,a {
+    outline: 1px black solid;
+}
+
+.boton-1 {
+    background: blue;
+    color: white;
+
+    &:hover {
+        background: rgb(3, 3, 165);
+    }
+}
+
+.boton-2 {
+    background: orange;
+    border-radius: 100px;
+    color: white;
+
+    &:hover {
+        background: rgb(3, 3, 165);
+    }
+}
+
+.boton-3 {
+    background: none;
+    border-radius: 7px;
+    color: black;
+    border: 2px solid currentColor;
+
+    &:hover {
+        background: rgb(0, 0, 0);
+        color: white;
+    }
+}
+
+.boton-4 {
+    background: #4ECDC4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #556270, #4ECDC4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #556270, #4ECDC4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    border-radius: 5px;
+
+    &:hover {
+        background: #4ECDC4;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #556270, #4ECDC4);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #556270, #4ECDC4);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+}
+
+.boton-5 {
+    background: green;
+    color: white;
+    box-shadow: 5px 5px rgb(5, 122, 5);
+
+    &:hover {
+        box-shadow: 2px 2px rgb(5, 122, 5);
+
+    }
+}
+
+
+.boton-6 {
+
+    border-radius: 3px;
+    border: 1px solid burlywood;
+    background: linear-gradient(0deg rgb(184, 206, 75) 0% rgba(184, 206, 75, 0.727) 100%);
+
+    &:hover {
+        box-shadow: 2px 2px rgb(5, 122, 5);
+
+    }
+}
+
+.boton-7 {
+
+    color-scheme: purple;
+    text-decoration: none;
+    border-radius: 3px ;
+    &:hover{
+        background: white;
+    }
+    
+}
