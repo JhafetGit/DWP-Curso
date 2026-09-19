@@ -1,0 +1,28 @@
+body {
+    background: gray;
+}
+
+
+.contenedor {
+
+    margin: 20px;
+    padding: 20px;
+
+    .imagen {
+        float: left;
+        margin: 20px;
+    }
+
+    .caja {
+        background: black;
+        color: white;
+        padding: 20px;
+        margin: 5px;
+        &:nth-child(1){
+            float: left;
+        }
+        &:nth-child(2){
+            float: right;
+        }
+    }
+}

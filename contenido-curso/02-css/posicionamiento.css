@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: grey;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background: black;
+    color: white;
+    border-radius: 11px;
+    font-size: 40px;
+    padding: 40px;
+    margin: 20px;
+}
+
+.pacisionada {
+    background: green;
+    /* position: static; */
+    /* position: relative;
+    top: 50px;
+    left: 40px; */
+    /* position: absolute;
+    top: 0px;
+    left: 100px; */
+    /* position: fixed;
+    top: 0;
+    left: 200px; */
+    position: sticky;
+    top: 0;
+    left: 200px;
+}
