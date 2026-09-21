@@ -1,0 +1,18 @@
+body{
+    background: gray;
+}
+
+.contenedor{
+    width: 500px;
+    background: white;
+    height: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid;
+    overflow: scroll;
+    .parrafo{
+        width: 150%;
+    }
+    overflow-y: auto;
+}

@@ -1,0 +1,33 @@
+body {
+    background: gray;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    color: black;
+    background: white;
+    font-size: 40px;
+    margin: 40px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+
+    &.caja-1 {
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+    }
+
+    &.caja-2 {
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+    }
+
+    &.caja-3 {
+        top: 200px;
+        left: 200px;
+    }
+}

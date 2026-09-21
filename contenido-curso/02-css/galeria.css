@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+
+.contenedor {
+    width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+
+    .titulo {
+        margin-bottom: 40px;
+    }
+
+    .galeria {
+        cursor: pointer;
+
+        figure {
+            width: 300px;
+            display: inline-block;
+            margin: 10px;
+
+            img {
+                width: 100%;
+                vertical-align: top;
+                border-radius: 5px;
+                filter: grayscale();
+                padding: 5px;
+                transition: 0.3s ease;
+                border: 1px solid transparent;
+
+
+                &:hover {
+                    border: 1px solid white;
+                    filter: grayscale(0%);
+                }
+
+            }
+
+            figcaption {
+                margin-top: 10px;
+                color: gray;
+                transition: 0.3s ease;
+
+            }
+
+            &:hover figcaption {
+
+                color: white;
+
+            }
+
+        }
+    }
+}
