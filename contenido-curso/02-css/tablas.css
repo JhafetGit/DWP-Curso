@@ -1,0 +1,43 @@
+body {
+    background: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabla {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+
+    tr,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+
+    thead {
+        background: blue;
+
+        th {
+            color: white;
+            padding: 10px;
+        }
+    }
+
+    tbody{
+        tr{
+            background: white;
+            &:nth-child(even){
+                background: whitesmoke;
+            }
+            &:hover{
+                background: gainsboro;
+            }
+            &.azul{
+                background: cadetblue;
+                color: white;
+            }
+        }
+    }
+}
