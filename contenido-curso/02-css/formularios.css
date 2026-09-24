@@ -20,4 +20,53 @@ body {
         outline: 3px solid navy;
         border: 2px solid transparent;
     }
+
+    &:disabled {
+        background: wheat;
+    }
+
+    &:invalid {
+        outline: 2px solid red;
+        border: 2px solid transparent;
+        color: red;
+    }
+
+    &:read-only {
+        border: none;
+        color: black;
+        background: #e7e7e7;
+        cursor: default;
+
+    }
+}
+
+
+button {
+    padding: 10px;
+    display: inline-block;
+
+    &:disabled {
+        opacity: 0.4;
+    }
+
+    &[type="submit"] {
+        background: green;
+        cursor: pointer;
+        color: white;
+        border: none;
+        border-radius: 5px;
+
+    }
+}
+
+
+input[type="radio"] {
+    &:checked+label {
+        color: blue;
+        font-weight: bold;
+    }
+
+    &:indeterminate+label {
+        color: red;
+    }
 }

@@ -10,8 +10,16 @@
 
 <body>
     <form action="#">
-        <input type="text" class="input" placeholder="Ingresa tu nombre">
-        <input type="text" class="input" placeholder="Ingresa tu nombre">
+        <input type="text" class="input" placeholder="Ingresa tu nombre" disabled>
+        <input type="email" class="input" placeholder="Ingresa tu correo" required>
+        <input type="text" class="input" readonly value="Id: q1231">
+        <button type="submit">Enviar</button>
+        <button disabled>Boton</button>
+
+        <input type="radio" name="opcion" id="opcion1">
+        <label for="opcion1">Opcion 1</label>
+        <input type="radio" name="opcion" id="opcion2">
+        <label for="opcion2">Opcion 2</label>
     </form>
 </body>
 

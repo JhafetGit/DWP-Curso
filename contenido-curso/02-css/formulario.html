@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>formulario con CSS</title>
+</head>
+
+<body>
+    <main>
+        <div class="mensaje">
+            <h1>Hola😄</h1>
+            <p>Mandame un mensaje y te respondere a la brevedad</p>
+
+            <form action="#" class="formulario">
+                <div class="grupo">
+                    <label for="nombre">Nombre: <span class="leyenda">(obligatorio)</span></label>
+                    <input type="text" class="" id="nombre" name="nombre" placeholder="Jhon Doe">
+                </div>
+                <div class="grupo">
+                    <label for="correo">Correo: <span class="leyenda">(obligatorio)</span></label>
+                    <input type="text" class="" id="correo" name="correo" placeholder="correo@correo.com">
+                </div>
+                <div class="grupo">
+                    <label for="pais">Pais:</label>
+                    <select name="pais" id="pais">
+                        <option value="mexico">Mexico</option>
+                        <option value="españa">España</option>
+                        <option value="colombia">colombia</option>
+                    </select>
+                </div>
+                <div class="grupo">
+                    <label>Asunto</label>
+                    <label for="opcion1" class="radio">
+                        <input type="radio" name="opcion" id="opcion1" value="informaion">
+                        <span>Solicitud Informacion</span>
+                    </label>
+                    <label for="opcion2" class="radio">
+                        <input type="radio" name="opcion" id="opcion2" value="contratacion">
+                        <span>Me gustaria contratarte</span>
+                    </label>
+                    <label for="opcion3" class="radio">
+                        <input type="radio" name="opcion" id="opcion3" value="otro">
+                        <span>Otro</span>
+                    </label>
+                </div>
+                <div class="grupo">
+                    <label for="notas">Notas:</label>
+                    <textarea name="notas" id="notas" placeholder="Mensaje adicional"> </textarea>
+                </div>
+                <div class="grupo">
+                    <label for="terminos" class="radio">
+                        <input type="checkbox" name="terminos" id="terminos">
+                        <span>Subscribirse a la lista de correos promocionales</span>
+                    </label>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
