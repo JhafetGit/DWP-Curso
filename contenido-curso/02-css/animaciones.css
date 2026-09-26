@@ -1,0 +1,29 @@
+body {
+    background: gray;
+}
+
+
+.caja {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 28px;
+    border-radius: 5px;
+    background: blue;
+
+    animation-name: cambiarAncho;
+    animation-duration: 2s;
+    
+
+}
+
+@keyframes cambiarAncho {
+    from {
+        width: 200px;
+    }
+
+    to {
+        width: 400px;
+    }
+}

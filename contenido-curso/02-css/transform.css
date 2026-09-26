@@ -1,0 +1,23 @@
+body {
+    background: gray;
+}
+
+.caja {
+    width: 400px;
+    margin: 100px 0px;
+    
+    transition: all ease 0.5s;
+
+    img {
+        width: 100%;
+        vertical-align: top;
+        border-radius: 15px;
+        /* transform: translateX(200px); */
+        /* transform: scale(2); */
+        /* transform: rotate(90deg); */
+    }
+}
+
+.checkbox:checked+.caja {
+    transform: rotate(90deg);
+}
