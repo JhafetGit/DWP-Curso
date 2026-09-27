@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: gray;
+}
+
+.caja {
+    background: green;
+    font-size: 32px;
+    padding: 20px;
+    height: 100px;
+
+    &.calc {
+        width: calc(50% - 200px);
+
+    }
+
+    &.min {
+        width: min(500px, 50%, 200px);
+    }
+
+     &.max {
+        width: max(500px, 50%, 200px);
+    }
+}

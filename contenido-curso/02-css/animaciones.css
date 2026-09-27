@@ -14,8 +14,15 @@ body {
 
     animation-name: cambiarAncho;
     animation-duration: 2s;
-    
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    /* animation-iteration-count: 2;
+    animation-direction: alternate; */
+    animation-fill-mode: forwards;
 
+    &:hover {
+        animation: agitar 2s ease 0s infinite forwards;
+    }
 }
 
 @keyframes cambiarAncho {
@@ -25,5 +32,15 @@ body {
 
     to {
         width: 400px;
+    }
+}
+
+@keyframes agitar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(5px);
     }
 }
