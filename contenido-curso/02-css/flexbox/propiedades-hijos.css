@@ -33,12 +33,61 @@ body {
 
 .basis {
     flex-direction: row;
+
     .caja {
         flex-basis: 120px;
     }
 }
+
 .grow {
     .caja {
         flex-grow: 1;
+    }
+}
+
+.basis {
+
+    .caja {
+        /* flex-basis: 400px;
+        flex-grow: 1;
+         */
+        flex: 1 1 400px;
+    }
+
+    .especial {
+        flex-shrink: 3;
+    }
+}
+
+.order {
+    .uno {
+
+        order: 4;
+    }
+    .dos{
+        order: 3;
+    }
+    .tres{
+        order: 2 ;
+    }
+    .cinco{
+        order: 3;
+    }
+}
+
+.align-self{
+    height: 700px;
+    align-items: start;
+    .uno{
+        align-self: stretch;
+    }
+    .dos{
+        align-self: start;
+    }
+    .tres{
+        align-self: center;
+    }
+    .cuatro{
+        align-self: flex-end;
     }
 }
