@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+
+    /* grid-template-rows: repeat(2, 300px); */
+    .especial {
+        background: aqua;
+        /* grid-column-start: 1;
+        grid-column-end: -1; */
+        grid-column: 1;
+        grid-row: 2/2;
+    }
+}
