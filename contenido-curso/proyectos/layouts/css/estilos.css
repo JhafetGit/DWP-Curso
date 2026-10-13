@@ -39,20 +39,26 @@ body {
     gap: 20px;
 
     .logo {
-        font-size: 50px;
+        font-size: clamp(30px, 5vw, 50px);
     }
 
     nav {
         display: flex;
-        gap: 20px;
+        gap: clamp(10px, 3vw, 20px);
 
         a {
             text-decoration: none;
             color: #531cb3;
-            font-size: 20px;
+            font-size: clamp(16px, 3vw, 20px);
         }
     }
 
+    @media screen and (max-width: 500px) {
+        & {
+            flex-direction: column;
+
+        }
+    }
 }
 
 .main {
@@ -63,7 +69,7 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: clamp(10px, 3vw, 20px);
 
     p {
         line-height: 30px;
@@ -78,6 +84,14 @@ body {
         text-align: center;
         border-radius: 5px;
     }
+
+    @media screen and (max-width: 750px) {
+        & {
+            grid-column: 1/-1;
+            align-items: stretch;
+        }
+
+    }
 }
 
 .aside {
@@ -90,12 +104,20 @@ body {
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 750px) {
+
+        & {
+            grid-column: 1/-1;
+            min-height: 200px;
+        }
+    }
+
 }
 
 .widgets {
     grid-column: 1/-1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 
     .widget {
