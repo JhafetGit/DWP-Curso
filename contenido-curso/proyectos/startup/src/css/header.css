@@ -47,4 +47,25 @@ header {
 
         }
     }
+
+    .navbar {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            color: var(--azul-secundario);
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+            font-weight: 700;
+            border-radius: 5px;
+
+            &.boton{
+                font-weight: 500;
+            }
+        }
+    }
 }
