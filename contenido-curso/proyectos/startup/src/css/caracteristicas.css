@@ -1,0 +1,13 @@
+.caracteristicas {
+    margin-top: 140px;
+    margin-bottom: 100px;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 200px;
+        .previews{
+            background: black;
+        }
+    }
+}
