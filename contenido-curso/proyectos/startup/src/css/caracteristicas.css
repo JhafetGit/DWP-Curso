@@ -5,9 +5,74 @@
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 200px;
-        .previews{
+        gap: 20px;
+
+        .previews {
             background: black;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .thumb {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                object-fit: cover;
+                vertical-align: top;
+                transition: 0.5s ease all;
+
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        .tabs{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            .tab{
+                background: white;
+                border-radius: 5px;
+                display: grid;
+                grid-template-columns: auto 1fr;
+                cursor: pointer;
+                overflow: hidden;
+
+                &.active{
+                    background: var(--azul-primario);
+                    color: white;
+                    .icono{
+                        color: white;
+                    }
+                }
+
+                .icono{
+                    display: flex;
+                    align-items: center;
+                    padding-left: 20px;
+                    color: var(--azul-primario);
+                  
+                    svg{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                .info{
+                    padding: 20px;
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                }
+            }
         }
     }
 }
