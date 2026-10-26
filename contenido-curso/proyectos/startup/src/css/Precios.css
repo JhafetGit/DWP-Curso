@@ -21,10 +21,11 @@
                 border: 1px solid var(--azul-primario);
             }
 
-            &.destacado{
+            &.destacado {
                 background: var(--azul-secundario);
                 color: white;
-                .precio span{
+
+                .precio span {
                     color: rgba(255, 255, 255, 0.5);
                 }
             }
@@ -72,4 +73,31 @@
         }
 
     }
+
+    @media screen and (max-width: 992px) {
+        & {
+            margin-bottom: 20px;
+
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        & {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        & {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
 }
