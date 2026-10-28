@@ -13,4 +13,20 @@ console.log("🚀 ~ usuarioConectad:", usuarioConectad)
 const usuarioConectado = true
 console.log("🚀 ~ usuarioConectado:", usuarioConectado)
 
+//Arreglos
+const arreglo = [1, '2', 3, true, { propiedad: 'valor' }]
+console.log("🚀 ~ arreglo:", arreglo)
 
+//Objetos
+const objetos = { "nombre": "Marcos", "apellido": "Hernandez" }
+console.log("🚀 ~ objetos:", objetos)
+
+
+function hola(){
+    console.log('Holaaa desde funcion')
+}
+
+hola()
+
+console.log(undefined)
+console.log(null)
