@@ -24,5 +24,12 @@ const registrarUsuario = (nombre, correo, ...datosAdicionales) => {
 registrarUsuario('Pablo', 'correo@correo.com', 28, 'España')
 
 
-const { nombre, correo } = datos
-console.log("🚀 ~ nombre, correo :", nombre, correo )
+const { nombre, correo, edad } = usario
+console.log("🚀 ~ nombre, correo :", nombre, correo)
+
+
+const mostrarEdad = (nombre, edad) => {
+    console.log("🚀 ~ mostrarEdad ~ nombre,edad:", nombre, edad)
+
+}
+mostrarEdad({ nombre, edad })
