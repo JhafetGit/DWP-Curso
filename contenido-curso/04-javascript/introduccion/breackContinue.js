@@ -7,12 +7,11 @@ for (let i = 0; i < nombres.length; i++) {
     }
 }
 const invitados = ['Carlos', 'Alberto', 'Christian', 'Jorge', 'Estefania', 'Erika', 'Manuel']
-
+console.log('Invitados: \n ')
 for (let i = 0; i < invitados.length; i++) {
     if (invitados[i] == 'Jorge') {
 
         continue;
     }
-    console.log('Invitados; \n ')
     console.log(invitados[i])
 }
