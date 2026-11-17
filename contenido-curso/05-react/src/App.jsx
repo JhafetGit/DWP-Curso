@@ -1,3 +1,5 @@
+import Header from "../components/Header"
+import Lista from "../components/Lista"
 
 
 function App() {
@@ -11,28 +13,22 @@ function App() {
     { nombre: 'Manuel', telefono: 1234 },
     { nombre: 'Rafael', telefono: 1234 },
   ]
+  const listaFamosos = [
+    { nombre: 'Carlos Salcido', telefono: 1234 },
+    { nombre: 'Alex Padilla ', telefono: 1234 },
+    { nombre: 'Cesar Augusto', telefono: 1234 },
+    { nombre: 'Manuel Figueroa', telefono: 1234 },
+    { nombre: 'Rafael Marquez', telefono: 1234 },
+  ]
 
   return (
     <>
       <div className="contenedor">
 
-        <h1>Hola Mundo desde REACT</h1>
+        <Header />
 
-
-        <section className="lista">
-          <h3 className="titulo">Contactos </h3>
-
-          {lista.map((user) => {
-            return (
-              <li>
-                <span className="nombre">
-                  {user.nombre}
-                </span>
-                {user.telefono} </li>
-
-            )
-          })}
-        </section>
+        <Lista lista={lista} titulo={'Amigos'} />
+        <Lista lista={listaFamosos} titulo="Famosos" />
       </div>
     </>
   )
