@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Header from "../components/Header"
 import Lista from "../components/Lista"
+import Login from "../components/Login";
 
 
 function App() {
@@ -21,17 +23,25 @@ function App() {
     { nombre: 'Rafael Marquez', telefono: 1234 },
   ]
 
+  // const sesion = false;
+  const [sesion, setSesion] = useState(false)
+  const handleSesion = () => {
+    setSesion(!sesion);
+  }
   return (
     <>
-      <div className="contenedor">
+      {sesion ?
+        <div className="contenedor">
+          <Header />
+          <Lista lista={lista} titulo={'Amigos'} />
+          <Lista lista={listaFamosos} titulo="Famosos" />
+          <button className="btnCerrarSesion" onClick={handleSesion}>Cerrar Sesión</button>
+        </div>
+        : <Login handleSesion={handleSesion} />}
 
-        <Header />
-
-        <Lista lista={lista} titulo={'Amigos'} />
-        <Lista lista={listaFamosos} titulo="Famosos" />
-      </div>
     </>
   )
+
 }
 
 export default App
