@@ -17,7 +17,7 @@ export default function Login({ handleSesion }) {
             <form className="login">
                 <h3>Inicia Sesión</h3>
                 <input type="text" value={usuario} placeholder="Usuario " onChange={(e) => setUsuario(e.target.value)} />
-                <input type="text" value={pass} placeholder="Contraseña" onChange={(e) => setPass(e.target.value)} />
+                <input type="password" value={pass} placeholder="Contraseña" onChange={(e) => setPass(e.target.value)} />
                 <button onClick={iniciarSesion}>Iniciar Sesion</button>
             </form>
         </div>
